@@ -44,9 +44,8 @@ This workflow and codebase structure is directly applicable to robust industrial
 * General Robotic Cell Integration
 
 ## Demonstration
+## 🎥 Simulation Run
+[Watch Simulation Video](simulation/Simulation_Video.mp4)
 
-### Simulation Run
-Video: real_robot/Robot_Operating_Video.mp4
-
-### Real Robot Execution
-Video: simulation/Simulation Video.mp4
+## 🤖 Real Robot Execution
+[Watch Real Robot Video](real_robot/Robot_Operating_Video.mp4)
