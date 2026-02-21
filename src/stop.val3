@@ -1,0 +1,24 @@
+/*
+ * ============================================================================
+ * Stäubli TX60 Robotic Manipulation Sequence
+ * Component: Stop and Recovery Routine
+ * ============================================================================
+ * 
+ * Description:
+ * This routine safely halts operations, returns the manipulator to the home 
+ * position, releases tools, and resets pending motion commands to ensure a 
+ * safe resting state.
+ */
+
+begin
+  // Return to Safe Home Position
+  movej(pos0, tool0, mNomSpeed)
+  
+  // Release the tool/gripper to safe state
+  open(tool0)
+  putln("Home position (pos0) reached. Tool released. Safe state established.")
+  
+  // Terminate execution and clear motion stack
+  popUpMsg("Warning: Pending movement commands have been explicitly canceled.")
+  resetMotion()
+end

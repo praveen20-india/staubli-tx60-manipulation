@@ -1,0 +1,44 @@
+/*
+ * ============================================================================
+ * Stäubli TX60 Robotic Manipulation Sequence
+ * Component: Start Routine
+ * ============================================================================
+ * 
+ * Description:
+ * This routine initializes the robot controller, enables power, and executes 
+ * a defined sequence of joint-space motions and tool I/O operations.
+ * 
+ * Motion Sequence:
+ * 1. Initialize interface and enable power
+ * 2. Move to first task pose (pos1[0]) with tool configuration tool0[0]
+ * 3. Actuate gripper (close)
+ * 4. Release gripper (open)
+ * 5. Move to second task pose (pos1[1]) with tool configuration tool0[1]
+ * 6. Actuate gripper (close)
+ */
+
+begin
+  // Initialize user interface
+  userPage()
+  cls()
+  putln("System Initialized: Executing Start Routine")
+  
+  // Enable robot power
+  enablePower()
+  
+  // Set nominal velocity (percentage of maximum robot speed)
+  mNomSpeed.vel = 30
+  
+  // Sequence 1: Move to first task pose
+  movej(pos1[0], tool0[0], mNomSpeed)
+  close(tool0[0])
+  putln("Task Pose 1 reached. Tool actuated (Closed).")
+  
+  // Prepare for next sequence
+  open(tool0)
+  
+  // Sequence 2: Move to second task pose
+  movej(pos1[1], tool0[1], mNomSpeed)
+  close(tool0[1])
+  putln("Task Pose 2 reached. Tool actuated (Closed).")
+end
