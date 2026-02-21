@@ -45,7 +45,7 @@ This workflow and codebase structure is directly applicable to robust industrial
 
 ## Demonstration
 ## 🎥 Simulation Run
-[Watch Simulation Video](simulation/Simulation_Video.mp4)
+simulation/Simulation_Video.mp4
 
 ## 🤖 Real Robot Execution
-[Watch Real Robot Video](real_robot/Robot_Operating_Video.mp4)
+real_robot/Robot_Operating_Video.mp4
