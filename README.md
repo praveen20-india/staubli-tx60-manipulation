@@ -46,11 +46,7 @@ This workflow and codebase structure is directly applicable to robust industrial
 ## Demonstration
 
 ### Simulation Run
-Video: [Insert Link to Simulation Drive / YouTube]
-*(See `simulation/simulation_video_link.txt`)*
+Video: real_robot/Robot_Operating_Video.mp4
 
 ### Real Robot Execution
-Video: [Insert Link to Real Execution Drive / YouTube]
-*(See `real_robot/real_execution_video_link.txt`)*
-
-*(Note: Appropriate thumbnails and GIFs can be placed in `simulation/simulation_screenshots/` and `real_robot/execution_screenshots/` for quick visual reference)*
+Video: simulation/Simulation Video.mp4
